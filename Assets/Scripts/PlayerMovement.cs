@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour {
     void Rotate()
     {
         float rotationInput = Input.GetAxis(m_RotationAxis);
-        float rotation = rotationInput * m_RotationSpeed * -1;
+        float rotation = rotationInput * m_RotationSpeed;
 
         m_rb2d.AddTorque(rotation);
     }
